@@ -3,7 +3,7 @@ import matplotlib.pyplot as plt
 
 
 class Perceptron:
-    def __init__(self, learning_rate=0.1, maximum_iterations=1000):
+    def __init__(self, learning_rate=1.0, maximum_iterations=1000):
         self.weights = None
         self.bias = None
         self.learning_rate = learning_rate
@@ -37,9 +37,9 @@ if __name__ == "__main__":
     plt.title('Scatter plot of X with labels y')
     plt.show()
     
-    perceptron = Perceptron(learning_rate=0.1, maximum_iterations=1000)
+    perceptron = Perceptron(learning_rate=1.0, maximum_iterations=1000)
     perceptron.fit(X, y)
     print(f"Weights :{perceptron.weights}")
     print(f"Bias :{perceptron.bias}")
     predictions = perceptron.predict(X)
-    print(predictions)
+    print(f"Bias :{predictions}")

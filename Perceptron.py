@@ -42,4 +42,4 @@ if __name__ == "__main__":
     print(f"Weights :{perceptron.weights}")
     print(f"Bias :{perceptron.bias}")
     predictions = perceptron.predict(X)
-    print(f"Bias :{predictions}")
+    print(f"Predictions :{predictions}")
